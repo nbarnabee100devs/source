@@ -86,9 +86,62 @@ body * {
   line-height: 1.2;
 }
 
+button {
+  color: var(--light);
+  background-color: var(--dark);
+  font-weight: bold;
+  padding: 5px 10px;
+  border: none;
+}
+
 /*-----------------
   Header
   -----------------*/
 
-  
+header {
+  width: 100%;
+  padding: 10px 20px;
+}
 
+header * {
+  outline: 1px solid red;
+}
+
+nav {
+  
+}
+
+nav > a {
+  float: left;
+}
+
+nav ul {
+  width: 40%;
+  margin: auto;
+  font-size: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+nav button {
+  float: right;
+}
+
+
+/*-----------------
+  Main
+  -----------------*/
+
+
+  /*-----------------
+  List section
+  -----------------*/
+
+  /*-----------------
+  End section
+  -----------------*/
