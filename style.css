@@ -29,10 +29,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-ul > li {
-	list-style-image: none;
-}
-
 blockquote, q {
 	quotes: none;
 }
@@ -72,10 +68,12 @@ a {
 :root {
   --dark: #2d445a;
   --medium: #9db1c4;
-  --light: #f4f9fc;
+  --light: #e1e9f0;
+  --lightest: #f4f9fc;
   --largest: 2rem;
   --larger: 1.5rem;
-  --large: 1.25rem;
+  --large: 1.15rem;
+  --small: 0.75rem;
 }
 
 .stack > * + * {
@@ -83,19 +81,57 @@ a {
   margin-block-start: 1rem;
 }
 
+body {
+  background-color: var(--lightest);
+}
+
 body * {
   color: var(--dark);
-  background-color: var(--light);
   line-height: 1.2;
 }
 
+body > * + * {
+  padding-left: 10%;
+  margin-top: 5%;
+}
+
 button {
-  color: var(--light);
+  color: var(--lightest);
   background-color: var(--dark);
   font-weight: bold;
   padding: 5px 10px;
   border: none;
 }
+
+/*-----------------
+  Special colors and sizes
+  -----------------*/
+
+nav > a {
+  font-size: var(--larger);
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-size: var(--largest);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: var(--large);
+  font-weight: bold;
+}
+
+.stack > a {
+  font-weight: bold;
+}
+
+small {
+  font-size: var(--small);
+}
+
+
 
 /*-----------------
   Header
@@ -109,11 +145,6 @@ header {
 nav > * {
   float: left;
   padding: 5px 10px;
-}
-
-nav > a {
-  font-size: var(--larger);
-  font-weight: bold;
 }
 
 nav ul {
@@ -140,11 +171,55 @@ nav button {
   Main
   -----------------*/
 
+  main {
+    background: url("./images/source.png") no-repeat;
+    background-position: right 0;
+    height: 475px; 
+  }
+
+  main > section {
+    width: 33%;
+  }
+
+  input {
+    border: none;
+    background-color: var(--light);
+    font-size: var(--small);
+    height: 26px;
+    width: 70%;
+    padding-left: 10px;
+    margin-right: -5px;
+  }
 
   /*-----------------
   List section
   -----------------*/
 
+.proto {
+  float: left;
+  width: 25%;
+  list-style: none;
+}
+
+.proto:not(last-child) {
+  padding-right: 2%
+}
+
+i {
+  transform: scale(1.8);
+  padding-left: 0.5ch;
+}
+
   /*-----------------
   End section
   -----------------*/
+
+  body > section:last-child {
+    clear:both;
+    background-color: white;
+    padding-top: 5%;
+  }
+
+  body > section:last-child > * {
+    width: 50%;
+  }
