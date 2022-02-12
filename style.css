@@ -73,6 +73,9 @@ a {
   --dark: #2d445a;
   --medium: #9db1c4;
   --light: #f4f9fc;
+  --largest: 2rem;
+  --larger: 1.5rem;
+  --large: 1.25rem;
 }
 
 .stack > * + * {
@@ -103,22 +106,21 @@ header {
   padding: 10px 20px;
 }
 
-header * {
-  outline: 1px solid red;
-}
-
-nav {
-  
+nav > * {
+  float: left;
+  padding: 5px 10px;
 }
 
 nav > a {
-  float: left;
+  font-size: var(--larger);
+  font-weight: bold;
 }
 
 nav ul {
-  width: 40%;
-  margin: auto;
+  width: 50%;
+  margin-inline: 15%;
   font-size: 0;
+  margin-top: 0.6%;
 }
 
 nav li {
@@ -129,8 +131,9 @@ nav li {
 }
 
 nav button {
-  float: right;
+  margin-top: 0.6%
 }
+
 
 
 /*-----------------
