@@ -131,6 +131,10 @@ small {
   font-size: var(--small);
 }
 
+p {
+  line-height: 1.4;
+}
+
 
 
 /*-----------------
@@ -149,7 +153,7 @@ nav > * {
 
 nav ul {
   width: 50%;
-  margin-inline: 15%;
+  margin-inline: 10%;
   font-size: 0;
   margin-top: 0.6%;
 }
@@ -162,7 +166,8 @@ nav li {
 }
 
 nav button {
-  margin-top: 0.6%
+  margin-top: 0.6%;
+  margin-left: 8%;
 }
 
 
@@ -208,6 +213,7 @@ nav button {
 i {
   transform: scale(1.8);
   padding-left: 0.5ch;
+  margin-bottom: 5%;
 }
 
   /*-----------------
