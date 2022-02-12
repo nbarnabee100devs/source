@@ -93,7 +93,6 @@ body * {
 body > * + * {
   padding-left: 10%;
   margin-top: 5%;
-  /* max-width: 1200px; */
 }
 
 button {
@@ -103,6 +102,7 @@ button {
   padding: 5px 10px;
   border: none;
 }
+
 
 /*-----------------
   Special colors and sizes
@@ -144,12 +144,29 @@ p {
 
 header {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 20px 5px 20px;
 }
 
-nav > * {
+nav {
+  position: relative;
+}
+
+nav > *:not(label, input) {
   float: left;
   padding: 5px 10px;
+}
+
+label {
+  position: absolute;
+  left: 5%;
+  bottom: 50%;
+  font-size: 3rem;
+  color: var(--medium);
+  display: none;
+}
+
+nav input {
+  display:none;
 }
 
 nav ul {
@@ -196,7 +213,7 @@ nav button {
     font-size: var(--small);
     height: 26px;
     width: 70%;
-    padding-left: 10px;
+    padding: 0 0 0 10px;
     margin-right: -5px;
   }
 
@@ -253,10 +270,14 @@ i {
 
   nav > a {
     float: none;
-    width: 100%;
+    width: auto;
     display: inline-block;
     text-align: center;
-    margin: auto;
+    margin-left: 35%;
+  }
+
+  nav label {
+    display: contents;
   }
 
   header {
