@@ -93,6 +93,7 @@ body * {
 body > * + * {
   padding-left: 10%;
   margin-top: 5%;
+  /* max-width: 1200px; */
 }
 
 button {
@@ -156,6 +157,7 @@ nav ul {
   margin-inline: 10%;
   font-size: 0;
   margin-top: 0.6%;
+  max-width: 600px;
 }
 
 nav li {
@@ -179,11 +181,13 @@ nav button {
   main {
     background: url("./images/source.png") no-repeat;
     background-position: right 0;
-    height: 475px; 
+    background-size: calc(300px + 20vw);
+    height: calc(250px + 20vw);
   }
 
   main > section {
     width: 33%;
+    max-width: 360px;
   }
 
   input {
@@ -199,6 +203,10 @@ nav button {
   /*-----------------
   List section
   -----------------*/
+
+  section:nth-child(2) {
+    max-width: 1200px;
+  }
 
 .proto {
   float: left;
@@ -228,4 +236,31 @@ i {
 
   body > section:last-child > * {
     width: 50%;
+    max-width: 530px;
   }
+
+
+/*-----------------
+  Media Queries
+  -----------------*/
+
+@media screen and (max-width: 900px) {
+  
+  nav > ul,
+  nav > button {
+    display: none;
+  }
+
+  nav > a {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--medium);
+  }
+
+}
