@@ -153,8 +153,8 @@ label {
   position: absolute;
   left: 5%;
   bottom: 40%;
-  font-size: 2rem;
-  color: var(--medium);
+  font-size: 1.2rem;
+  color: var(--dark);
   display: none;
 }
 
