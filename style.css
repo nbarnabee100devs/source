@@ -302,6 +302,29 @@ i {
     padding-left: 0;
   }
 
+  main {
+    background-size: calc(250px + 10vw);
+    background-position: bottom right;
+    height: 550px;
+  }
+
+  main > section {
+    margin-top: 2%;
+  }
+
+  main > section,
+  main > section > * {
+    width: 100%;
+    padding-left: 4%;
+    max-width: 500px;
+  }
+  
+  input,
+  button {
+    width: 96%;
+    margin: 1% auto;
+  }
+
   .proto {
     float: none;
     width: 100%;
@@ -333,5 +356,12 @@ i {
   body > section:last-child > p {
     margin-top: 2%;
   }
+
+}
+
+
+@media screen and (max-width: 780px) {
+
+
 
 }
